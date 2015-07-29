@@ -1,0 +1,67 @@
+#hotelinfo {
+  color: $light;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $light;
+  }
+
+  .heading {
+    h1 {
+      font-size: 3em;
+      font-weight: $thin;
+    }
+  }
+
+  #usefulinfo {
+    @include clearfix;
+    section {
+      h2 {
+        color: lighten($purple,20);
+        font-size: 1.3em;
+        line-height: 110%;
+        padding: 10px 0;
+      }//h2
+
+      p {
+        font-size: 1em;
+        line-height: 130%;
+      } //p
+
+      ul {
+        li {
+          list-style: square;
+          margin-left: 10%;
+          line-height: 115%;
+          margin-bottom: 5px;
+        } //li
+      } //ul
+    } //section
+
+    section#arrivalinfo {
+      ul {
+        margin: 0;
+        li {
+          list-style: none;
+          border-top: 1px solid $light;
+          padding: 15px 0;
+          margin-left: 0;
+          strong {
+            color: $yellow;
+          } //strong
+
+          &:first-child {
+            border-top: none;
+          } //first child
+        } //li
+      } //ul
+    } //section#arrivalinfo
+  } //useful info
+
+  #greenprogram {
+    background-color: rgba(darken($green, 30), .5);
+    margin-top: 20px;
+
+    border: 1px solid $light;
+    padding: 20px;
+  } //greenprogram
+} //hotelinfo

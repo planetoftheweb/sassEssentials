@@ -1,0 +1,16 @@
+{
+  "name": "sassEssentials",
+  "version": "0.0.1",
+  "description": "A website for my Sass Essential Training course on Lynda.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/planetoftheweb/sassEssentials.git"
+  },
+  "author": "Ray Villalobos",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.9.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-webserver": "^0.9.1"
+  }
+}

@@ -1,0 +1,19 @@
+// style.scss
+// ==============
+ 
+//Core Partial
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+
+//Import Modules
+@import "modules/intro";
+@import "modules/nav";
+@import "modules/welcome";
+@import "modules/events";
+@import "modules/dining";
+@import "modules/hotelinfo";
+@import "modules/rooms";
+@import "modules/attractions";
+@import "modules/footer";
