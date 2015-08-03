@@ -13,7 +13,7 @@ gulp.task('js', function() {
 gulp.task('sass', function () {
     return sass('process/sass/style.scss', {
       sourcemap: true,
-      style: 'compressed'
+      style: 'expanded'
     })
     .on('error', function (err) {
         console.error('Error!', err.message);
@@ -24,7 +24,7 @@ gulp.task('sass', function () {
 
 gulp.task('watch', function() {
   gulp.watch('builds/sassEssentials/js/**/*', ['js']);
-  gulp.watch('process/sass/**/*', ['sass']);
+  gulp.watch(['process/sass/**/*'], ['sass']);
 });
 
 gulp.task('webserver', function() {
@@ -35,4 +35,4 @@ gulp.task('webserver', function() {
         }));
 });
 
-gulp.task('default', ['watch', 'sass', 'webserver']);
+gulp.task('default', ['watch', 'sass','webserver']);
