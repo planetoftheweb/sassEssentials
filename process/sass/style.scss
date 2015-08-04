@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather|Josefin+Slab|Oswald|Bree+Serif);
+
 // Variables
 $offwhite:    #EEE8D6;
 $darkest:     #022933;
@@ -14,6 +15,7 @@ $color-headlines: $red;
 $color-subheads: $orange;
 $color-main: $darkest;
 $color-backgrounds: $offwhite;
+$color-mediaheads: $green;
 
 $font-main:      'Open Sans', serif;
 $font-highlight: 'Bree Serif', Helvetica, sans-serif;
@@ -26,9 +28,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: $font-main;
   font-size: 14px;
   font-size: 1.8rem;
+  font-family: $font-main;
   color: $color-main;
   background-color: $color-backgrounds;
 }
@@ -54,3 +56,41 @@ h3 {
 h3,h4,h5,h6 {
   font-family: $font-main;
 }
+
+
+.media {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    .item {
+      margin-bottom: 20px;
+      border-top: 1px dotted $darkest;
+      padding-top: 10px;
+    }
+  
+    .head {
+      margin: 0;
+      padding: 0;
+      color: $color-mediaheads;
+      font-size: 2rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    img {
+      float: left;
+      margin-right: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-main;
+    }
+}
+
+
+
