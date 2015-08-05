@@ -13,7 +13,7 @@ gulp.task('js', function() {
 gulp.task('sass', function () {
     return sass('process/sass/style.scss', {
       sourcemap: true,
-      style: 'expanded'
+      style: 'compressed'
     })
     .on('error', function (err) {
         console.error('Error!', err.message);
@@ -35,4 +35,4 @@ gulp.task('webserver', function() {
         }));
 });
 
-gulp.task('default', ['watch', 'sass','webserver']);
+gulp.task('default', ['sass', 'watch', 'webserver']);
