@@ -1,0 +1,31 @@
+.background {
+	color: $color-backgrounds;
+	margin: 20px 0;
+	width: 100%;
+	display: table;
+
+	.container {
+		display: table-cell;
+		vertical-align: bottom;
+		padding-bottom: 20px;
+
+		h1 {
+			color: $yellow;
+			font-family: $font-main;
+			font-size: 5rem;
+			line-height: 105%;
+			margin-bottom: 0;
+			padding: 0 10%;
+		}
+
+		p {
+			padding: 0 10%;
+			margin-top: 0;
+		}
+	}
+}
+
+.jumbotron {
+		background: $darkblue;
+		height: 600px;
+}
