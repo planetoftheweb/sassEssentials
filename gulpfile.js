@@ -32,6 +32,7 @@ gulp.task('webserver', function() {
         .pipe(webserver({
             host: '0.0.0.0',
             livereload: true,
+            livereload: true,
             open: true
         }));
 });
