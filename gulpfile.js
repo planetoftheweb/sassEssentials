@@ -30,6 +30,7 @@ gulp.task('watch', function() {
 gulp.task('webserver', function() {
     gulp.src('builds/sassEssentials/')
         .pipe(webserver({
+            host: '0.0.0.0',
             livereload: true,
             open: true
         }));
