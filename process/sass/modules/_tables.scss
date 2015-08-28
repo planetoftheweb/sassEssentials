@@ -1,0 +1,22 @@
+.table {
+  font-size: 1.5rem;
+  text-align: left;
+  width: 100%;
+
+  caption {
+    font-size: 2.5rem;
+    text-align: left;
+    padding-bottom: 5px;
+  }
+
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: 10px;
+      }
+    }
+  }
+}
