@@ -35,8 +35,16 @@
   }
 }
 
-@mixin break($length) {
-  @media (min-width: $length) {
-    @content;
+@mixin break($args...) {
+  @if length($args) == 1 {
+    @media (min-width: nth($args, 1)) {
+      @content;
+    }
+  } @else {
+    @media (min-width: nth($args, 1))
+      and (max-width: nth($args, 2)) {
+      @content;
+    }
   }
+
 }
