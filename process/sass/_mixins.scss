@@ -22,3 +22,15 @@
     clear: both;
   }
 }
+
+@mixin imagegrid($qty, $margin) {
+  width: ((100% - (($qty - 1) * $margin))/$qty);
+  &:nth-child(n) {
+    margin-right: $margin;
+    margin-bottom: $margin;
+  }
+  &:nth-child(#{$qty}n) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
