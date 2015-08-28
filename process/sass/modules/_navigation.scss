@@ -5,6 +5,10 @@ nav {
 
 	.branding {
 		float: left;
+		display: none;
+		@include break(1000px) {
+			display: block;
+		}
 	}
 
 	.branding h1 {
@@ -22,7 +26,9 @@ nav {
 	}
 
 	ul li {
-		float: right;
+		@include break(760px) {
+			float: right;
+		}
 		padding: 10px 5px;
 	}
 
