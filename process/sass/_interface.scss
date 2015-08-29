@@ -18,19 +18,16 @@ $roundness: 20px 0 20px 0;
 	color: $color-btn-text;
 }
 
-.btn-default {
-	@extend %btn;
-	background: $color-btn-default;
-}
+$color-btn-names: 'default', 'hot', 'cool';
+$color-btn-values: $color-main, $red, $blue;
 
-.btn-hot {
-	@extend %btn;
-	background: $color-btn-hot;
-}
+@each $name in $color-btn-names {
+	$i: index($color-btn-names, $name);
 
-.btn-cool {
-	@extend %btn;
-	background: $color-btn-cool;
+	.btn-#{$name} {
+		@extend %btn;
+		background-color: nth($color-btn-values, $i);
+	}
 }
 
 .grid {
