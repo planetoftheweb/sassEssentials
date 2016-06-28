@@ -8,8 +8,8 @@
 </head>
 <body>
 <header>
-  <div class="container">
-    <nav>
+  <nav>
+    <div class="container">
       <div class="branding"><h1>Table of Contents</h1></div>
       <ul>
         <li><a href="#jumbotron">Jumbotron</a></li>
@@ -18,13 +18,12 @@
         <li><a href="#lists">Lists</a></li>
         <li><a href="#media">Media</a></li>
         <li><a href="#tables">Tables</a></li>
-        <li><a href="#forms">Forms</a></li>
       </ul>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
 
-<section class="jumbotron" id="jumbotron">
+<section class="background jumbotron" id="jumbotron">
   <div class="container">
     <h1>Jumbotron</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt cum doloribus asperiores rem beatae commodi excepturi incidunt dicta illum expedita, necessitatibus consequatur obcaecati nobis optio dolorum accusantium, ad dolor sed.</p>
@@ -47,15 +46,33 @@
 
     <h4>H4. Fourth level headline</h4>
     <p>Nesciunt odio velit quae sapiente saepe officia fugit delectus asperiores, eius temporibus expedita voluptate, placeat totam! Reprehenderit esse deserunt laboriosam, nihil architecto recusandae quas nam quo placeat, perspiciatis natus. Explicabo.</p>
+
+    <div class="grid">
+      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
+      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
+      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
+      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
+      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
+      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
+      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
+      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
+      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
+      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
+      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
+      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
+      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
+    </div>
+
   </div>
 </section>
 
 <section id="buttons">
   <div class="container">
     <h1>Buttons</h1>
-    <button>Default</button>
-    <button>Cool</button>
-    <button>Hot</button>
+    <button class="btn-default">Default</button>
+    <button class="btn-cool">Cool</button>
+    <button class="btn-hot">Hot</button>
+    <button class="btn-awesome">Awesome</button>
   </div><!-- container -->
 </section>
 
@@ -140,7 +157,7 @@
 <section id="tables">
   <div class="container">
     <h1>Tables</h1>
-    <table>
+    <table class="table">
       <caption>Table Caption</caption>
       <thead>
         <tr>
@@ -184,45 +201,10 @@
     </table>
   </div>
 </section>
-
-<section id="forms">
-  <div class="container">
-    <h1>Forms</h1>
-    <form>
-      <div class="form-group">
-        <label for="inputName">Name</label>
-        <input class="form-control" type="text" id="inputName" 
-          placeholder="Name">
-      </div>
-    <div class="form-group">
-      <label for="inputEmail">Email</label>
-      <input class="form-control" type="email" id="inputEmail" 
-        placeholder="Email">
-    </div>
-    <div class="form-group">
-      <label for="selectSite">Site</label>
-      <select class="form-control" id="selectSite">
-        <option>Choose...</option>
-        <option>lynda.com</option>
-        <option>raybo.org</option>
-        <option>iviewsource.com</option>
-      </select>  
-    </div>
-    <div class="checkbox">
-      <label><input id="inputAddList" type="checkbox">Add me to e-mail blast</label>
-    </div>
-    <div class="form-group">
-      <label for="inputComments">Comments</label>
-      <textarea class="form-control" id="inputComments"></textarea> 
-    </div>
-    <input class="btn btn-default pull-right" type="submit" value="submit">
-    </form>
-  </div>
-</section>
         
 <footer>
-  <div class="container">
     <nav>
+      <div class="container">
       <ul>
         <li><a href="#jumbotron">Jumbotron</a></li>
         <li><a href="#palette">Palette</a></li>
@@ -231,10 +213,9 @@
         <li><a href="#lists">Lists</a></li>
         <li><a href="#media">Media</a></li>
         <li><a href="#tables">Tables</a></li>
-        <li><a href="#forms">Forms</a></li>
       </ul>
+    </div>
     </nav>
-  </div>
 </footer>     
 
   <script src="js/script.js"></script>

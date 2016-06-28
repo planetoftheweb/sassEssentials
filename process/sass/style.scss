@@ -1,3 +1,11 @@
+
+/*demonstrating use of partial files
+as with normal partial files, it is convention to begin the filename with an underscore
+the import statement can stay the same*/
+@import "variables.scss";
+
+$color-main: $darkblue;
+
  html {
   font-size: 62.5%;
 }
@@ -7,11 +15,29 @@ body {
   padding: 0;
   font-size: 1.8rem;
   font-family: 'Helvetica', sans-serif;
-  color: #022933;
-  background-color: #EEE8D6;
+  color: $darkblue;
+  background-color: $offwhite;
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+.media {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .item {
+    margin-bottom: 20px;
+
+  }
+  .head {
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    float: left;
+  }
 }
