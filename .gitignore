@@ -4,4 +4,8 @@ node_modules
 .sass-cache
 images/**
 slides/**
+<<<<<<< HEAD
 builds/sassEssentials/css/style.css
+=======
+builds/sassEssentials/css/style.css
+>>>>>>> origin/master

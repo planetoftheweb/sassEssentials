@@ -1,0 +1,43 @@
+$color-btn-text: $color-backgrounds;
+$roundness: 20px 0 20px 0;
+
+%btn {
+	display: inline-block;
+	padding: 6px 12px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	font-family: $font-highlight;
+	user-select: none;
+	color: $color-btn-text;
+}
+
+$color-btns: (
+	default: $color-main,
+	hot: $red,
+	cool: $blue,
+	awesome: $purple
+);
+
+@each $key, $value in $color-btns {
+	.btn-#{$key} {
+		@extend %btn;
+		background-color: $value;
+	}
+}
+
+.grid {
+	@include clearfix;
+	.item {
+		float: left;
+		@include imagegrid(3, 2%);
+	}
+	img {
+		display: block;
+		border-radius: nth($roundness, 1);
+		max-width: 100%;
+	}
+}
