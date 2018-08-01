@@ -28,3 +28,9 @@ rgba(0,0,0,0), rgba(0,0,0,0.6)), url($image);
     margin-bottom: 0;
   }
 }
+
+@mixin break($length) {
+  @media (min-width: $length){
+    @content;
+  }
+}
