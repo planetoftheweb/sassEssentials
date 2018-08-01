@@ -1,0 +1,33 @@
+$color-btn-text: $color-background;
+$color-btn-default: $color-main;
+$color-btn-hot: $red;
+$color-btn-cool: $blue;
+
+%btn {
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: $headingFont;
+  user-select: none;
+  color: $color-btn-text;
+}
+
+.btn-default{
+  @extend %btn;
+  background: $color-btn-default;
+}
+
+.btn-hot{
+  @extend %btn;
+  background: $color-btn-hot;
+}
+
+.btn-cool{
+  @extend %btn;
+  background: $color-btn-cool;
+}
