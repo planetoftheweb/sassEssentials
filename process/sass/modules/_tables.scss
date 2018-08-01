@@ -1,48 +1,43 @@
-$color-even-cells: transparentize($yellow, .8);
-
-.table {
+.table{
   font-size: 1.5rem;
   text-align: left;
   width: 100%;
 
-  caption {
+  caption{
     font-size: 2.5rem;
     text-align: left;
     padding-bottom: 5px;
   }
 
-  > thead,
-  > tbody,
-  > tfoot {
-    > tr {
-
-      &:hover {
-        background-color: darken(adjust-hue($color-backgrounds, -20deg), 10%);
+   thead,
+   tbody,
+   tfoot{
+    tr{
+      &:hover{
+        background-color: darken(adjust-hue($color-background,-20deg),10%)
       }
-
-      &:nth-child(even) {
+      &:nth-child(even){
         background-color: $color-even-cells;
-
-        &:hover {
+        &:hover{
           background-color: opacify($color-even-cells, .3);
         }
       }
-      > th,
-      > td {
+      th,
+      td{
         padding: 10px;
         border-bottom: 1px dotted $blue;
       }
     }
   }
 
-  >thead >tr {
+  thead>tr{
     background-color: $blue;
-    color: $color-backgrounds;
-    &:hover {
+    color: $color-background;
+    &:hover{
       background-color: complement($blue);
     }
-    >th {
-      border-bottom :0;
+    th{
+      border-bottom: 0;
     }
   }
 }

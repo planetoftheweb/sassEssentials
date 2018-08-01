@@ -6,25 +6,15 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.8rem;
-  font-family: $font-main;
+  font-family: $openSans;
   color: $color-main;
-  background-color: $color-backgrounds;
+  background-color: $color-background;
 }
-
+h1,h2,h3,h4,h5,h6{
+  font-family: $headingFont;
+  color: $color-headlines;
+}
 .container {
   width: 80%;
   margin: 0 auto;
-}
-
-$color-headlines: $blue, $purple, $green,
-  $red, $orange, $yellow;
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: $font-highlight;
-}
-
-@for $item from 1 through length($color-headlines) {
-  h#{$item} {
-    color: nth($color-headlines, $item);
-  }
 }

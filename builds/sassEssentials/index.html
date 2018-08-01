@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Sass Essentials</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header>
-  <nav>
-    <div class="container">
+  <div class="container">
+    <nav>
       <div class="branding"><h1>Table of Contents</h1></div>
       <ul>
         <li><a href="#jumbotron">Jumbotron</a></li>
@@ -18,9 +19,10 @@
         <li><a href="#lists">Lists</a></li>
         <li><a href="#media">Media</a></li>
         <li><a href="#tables">Tables</a></li>
+        <li><a href="#forms">Forms</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
 
 <section class="background jumbotron" id="jumbotron">
@@ -47,22 +49,40 @@
     <h4>H4. Fourth level headline</h4>
     <p>Nesciunt odio velit quae sapiente saepe officia fugit delectus asperiores, eius temporibus expedita voluptate, placeat totam! Reprehenderit esse deserunt laboriosam, nihil architecto recusandae quas nam quo placeat, perspiciatis natus. Explicabo.</p>
 
-    <div class="grid">
-      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
-      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
-      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
-      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
-      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
-      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
-      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
-      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
-      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
-      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
-      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
-      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
-      <div class="item"><img src="http://placehold.it/500x500" alt="thumbnail"></div>
-    </div>
+    <ol class="media">
+      <li class="item">
+        <a href="#">
+          <img src="http://placehold.it/90x90" alt="thumbnail">
+          <h2 class="head">Title one</h2>
+          <p>Atque suscipit, neque quisquam laboriosam enim officiis, nam nemo cupiditate ipsam eveniet id eaque optio facere! Maxime accusamus repellendus nisi veniam saepe explicabo, voluptatum quod obcaecati, possimus quis expedita? Dignissimos.</p>
+        </a>
+      </li>
+      <li class="item">
+        <a href="#">
+          <img src="http://placehold.it/90x90" alt="thumbnail">
+          <h2 class="head">A much, much longer title two</h2>
+          <p>Magnam repellat laudantium, aspernatur fugiat quam deleniti atque in voluptas, aliquam corporis, amet temporibus modi! Exercitationem voluptates quisquam, enim eos autem quidem expedita quod, quasi eum deleniti neque nostrum possimus.</p>
+        </a>
+      </li>
+      <li class="item">
+        <a href="#">
+          <img src="http://placehold.it/90x90" alt="thumbnail">
+          <h2 class="head">Title Three</h2>
+          <p>Ea obcaecati a deleniti autem. Nihil minima, laudantium voluptas quod inventore iure, beatae quis aspernatur culpa qui minus esse harum odit soluta! Quaerat magnam asperiores repellendus voluptas similique est excepturi.</p>
+        </a>
+      </li>
+    </ol>
 
+    <div class="grid">
+      <div class="item">
+        <img src="http://placehold.it/50x50" alt="thumbnail">
+        <img src="http://placehold.it/50x50" alt="thumbnail">
+        <img src="http://placehold.it/50x50" alt="thumbnail">
+        <img src="http://placehold.it/50x50" alt="thumbnail">
+        <img src="http://placehold.it/50x50" alt="thumbnail">
+        <img src="http://placehold.it/50x50" alt="thumbnail">
+      </div>
+    </div>
   </div>
 </section>
 
@@ -72,8 +92,13 @@
     <button class="btn-default">Default</button>
     <button class="btn-cool">Cool</button>
     <button class="btn-hot">Hot</button>
-    <button class="btn-awesome">Awesome</button>
   </div><!-- container -->
+</section>
+
+<section class="bridge background">
+  <div class="container">
+    <h1>Bridge Background</h1>
+  </div>
 </section>
 
 <section id="lists">
@@ -98,7 +123,7 @@
         </li>
         <li>animi consectetur</li>
         <li>itaque placeat</li>
-      </ul>    
+      </ul>
     </article>
 
     <article>
@@ -150,7 +175,7 @@
           <p>Ea obcaecati a deleniti autem. Nihil minima, laudantium voluptas quod inventore iure, beatae quis aspernatur culpa qui minus esse harum odit soluta! Quaerat magnam asperiores repellendus voluptas similique est excepturi.</p>
         </a>
       </li>
-    </ol>      
+    </ol>
   </div>
 </section>
 
@@ -201,10 +226,45 @@
     </table>
   </div>
 </section>
-        
+
+<section id="forms">
+  <div class="container">
+    <h1>Forms</h1>
+    <form>
+      <div class="form-group">
+        <label for="inputName">Name</label>
+        <input class="form-control" type="text" id="inputName"
+          placeholder="Name">
+      </div>
+    <div class="form-group">
+      <label for="inputEmail">Email</label>
+      <input class="form-control" type="email" id="inputEmail"
+        placeholder="Email">
+    </div>
+    <div class="form-group">
+      <label for="selectSite">Site</label>
+      <select class="form-control" id="selectSite">
+        <option>Choose...</option>
+        <option>lynda.com</option>
+        <option>raybo.org</option>
+        <option>iviewsource.com</option>
+      </select>
+    </div>
+    <div class="checkbox">
+      <label><input id="inputAddList" type="checkbox">Add me to e-mail blast</label>
+    </div>
+    <div class="form-group">
+      <label for="inputComments">Comments</label>
+      <textarea class="form-control" id="inputComments"></textarea>
+    </div>
+    <input class="btn btn-default pull-right" type="submit" value="submit">
+    </form>
+  </div>
+</section>
+
 <footer>
+  <div class="container">
     <nav>
-      <div class="container">
       <ul>
         <li><a href="#jumbotron">Jumbotron</a></li>
         <li><a href="#palette">Palette</a></li>
@@ -213,10 +273,11 @@
         <li><a href="#lists">Lists</a></li>
         <li><a href="#media">Media</a></li>
         <li><a href="#tables">Tables</a></li>
+        <li><a href="#forms">Forms</a></li>
       </ul>
-    </div>
     </nav>
-</footer>     
+  </div>
+</footer>
 
   <script src="js/script.js"></script>
 </body>

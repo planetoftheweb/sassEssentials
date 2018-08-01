@@ -1,46 +1,41 @@
-$color-item-border: $red;
-$color-media-head:  $blue;
-
 .media {
   margin: 0;
   padding: 0;
   list-style: none;
 
-  .item {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
+  .item{
+    padding: 10px;
     border-top: 1px dotted $color-item-border;
-    &:hover {
+    &:hover{
       background: $yellow;
     }
-    &:last-of-type {
+    &:last-of-type{
       border-bottom: 1px dotted $color-item-border;
     }
     @include clearfix;
   }
 
-  .head {
+  .head{
     margin: 0;
     padding: 0;
-    color: $color-media-head;
+    color: $color-medial-head;
     font-size: 2rem;
-    #typography & {
+    #typography &{
       color: $red;
     }
   }
 
-  p {
+  p{
     margin: 0;
     font-size: 1.5rem;
   }
 
-  img {
+  img{
     float: left;
     margin-right: 10px;
   }
 
-  a {
+  a{
     text-decoration: none;
     color: $color-main;
   }
