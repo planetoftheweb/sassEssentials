@@ -1,0 +1,33 @@
+.media {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .item{
+    margin-bottom: 20px;
+    border-top: 1px dotted $color-item-border;
+    padding-top: 10px;
+  }
+
+  .head{
+    margin: 0;
+    padding: 0;
+    color: $color-medial-head;
+    font-size: 2rem;
+  }
+
+  p{
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  img{
+    float: left;
+    margin-right: 10px;
+  }
+
+  a{
+    text-decoration: none;
+    color: $color-main;
+  }
+}
