@@ -6,3 +6,13 @@ rgba(0,0,0,0), rgba(0,0,0,0.6)), url($image);
   background-size: cover;
   height: $height;
 }
+
+@mixin clearfix {
+  &:before, &:after{
+    content: '';
+    display: table;
+  }
+  &:after{
+    clear: both;
+  }
+}

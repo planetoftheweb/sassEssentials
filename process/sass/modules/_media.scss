@@ -4,9 +4,15 @@
   list-style: none;
 
   .item{
-    margin-bottom: 20px;
+    padding: 10px;
     border-top: 1px dotted $color-item-border;
-    padding-top: 10px;
+    &:hover{
+      background: $yellow;
+    }
+    &:last-of-type{
+      border-bottom: 1px dotted $color-item-border;
+    }
+    @include clearfix;
   }
 
   .head{
@@ -14,6 +20,9 @@
     padding: 0;
     color: $color-medial-head;
     font-size: 2rem;
+    #typography &{
+      color: $red;
+    }
   }
 
   p{
