@@ -15,6 +15,9 @@ $color-background: $offWhite;
 $color-headlines: $purple;
 $color-item-border: $red;
 $color-medial-head: $blue;
+$color-even-cells: transparentize($yellow, .8);
 
 $headingFont: $montserrat;
 $bodyFont: $openSans;
+
+$roundness: 20px 0 20px 0;
