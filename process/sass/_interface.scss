@@ -17,14 +17,31 @@ $color-btn-cool: $blue;
   color: $color-btn-text;
 }
 
-$color-btn-names: 'default','hot','cool';
-$color-btn-values: $color-main, $red, $blue;
+//each way matching the 2 lists
+// $color-btn-names: 'default','hot','cool';
+// $color-btn-values: $color-main, $red, $blue;
+//
+// @each $name in $color-btn-names{
+//   $i:index($color-btn-names, $name);
+//   .btn-#{$name}{
+//     @extend %btn;
+//     background-color: nth($color-btn-values, $i);
+//   }
+// }
+//
+//associative arrays way
 
-@each $name in $color-btn-names{
-  $i:index($color-btn-names, $name);
-  .btn-#{$name}{
+$color-btns:(
+  default: $color-main,
+  hot: $red,
+  cool: $blue,
+  awesome: $purple
+);
+
+@each $key, $value in $color-btns{
+  .btn-#{$key}{
     @extend %btn;
-    background-color: nth($color-btn-values, $i);
+    background-color: $value;
   }
 }
 
