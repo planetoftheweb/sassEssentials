@@ -17,20 +17,17 @@ $color-btn-cool: $blue;
   color: $color-btn-text;
 }
 
-.btn-default{
-  @extend %btn;
-  background: $color-btn-default;
+$color-btn-names: 'default','hot','cool';
+$color-btn-values: $color-main, $red, $blue;
+
+@each $name in $color-btn-names{
+  $i:index($color-btn-names, $name);
+  .btn-#{$name}{
+    @extend %btn;
+    background-color: nth($color-btn-values, $i);
+  }
 }
 
-.btn-hot{
-  @extend %btn;
-  background: $color-btn-hot;
-}
-
-.btn-cool{
-  @extend %btn;
-  background: $color-btn-cool;
-}
 
 .grid {
 	@include clearfix;
