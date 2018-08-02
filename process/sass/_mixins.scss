@@ -29,8 +29,14 @@ rgba(0,0,0,0), rgba(0,0,0,0.6)), url($image);
   }
 }
 
-@mixin break($length) {
-  @media (min-width: $length){
-    @content;
+@mixin break($args...) {
+  @if length($args) == 1 {
+    @media (min-width: nth($args, 1)){
+      @content;
+    }
+  } @else {
+    @media (min-width: nth($args, 1)) and (max-width: nth($args, 2)){
+      @content;
+    }
   }
 }
