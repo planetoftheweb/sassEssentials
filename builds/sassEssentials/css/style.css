@@ -1,6 +1,5 @@
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
   margin: 0;
@@ -8,14 +7,8 @@ body {
   font-size: 1.8rem;
   font-family: 'Helvetica', sans-serif;
   color: #022933;
-  background-color: #EEE8D6;
-}
+  background-color: #EEE8D6; }
 
 .container {
   width: 80%;
-  margin: 0 auto;
-}
-
-
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6IkFBQUMsSUFBSztFQUNKLFNBQVMsRUFBRSxLQUFLOzs7QUFHbEIsSUFBSztFQUNILE1BQU0sRUFBRSxDQUFDO0VBQ1QsT0FBTyxFQUFFLENBQUM7RUFDVixTQUFTLEVBQUUsTUFBTTtFQUNqQixXQUFXLEVBQUUsdUJBQXVCO0VBQ3BDLEtBQUssRUFBRSxPQUFPO0VBQ2QsZ0JBQWdCLEVBQUUsT0FBTzs7O0FBRzNCLFVBQVc7RUFDVCxLQUFLLEVBQUUsR0FBRztFQUNWLE1BQU0sRUFBRSxNQUFNIiwic291cmNlcyI6WyJzdHlsZS5zY3NzIl0sIm5hbWVzIjpbXSwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiBodG1sIHtcbiAgZm9udC1zaXplOiA2Mi41JTtcbn1cblxuYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgcGFkZGluZzogMDtcbiAgZm9udC1zaXplOiAxLjhyZW07XG4gIGZvbnQtZmFtaWx5OiAnSGVsdmV0aWNhJywgc2Fucy1zZXJpZjtcbiAgY29sb3I6ICMwMjI5MzM7XG4gIGJhY2tncm91bmQtY29sb3I6ICNFRUU4RDY7XG59XG5cbi5jb250YWluZXIge1xuICB3aWR0aDogODAlO1xuICBtYXJnaW46IDAgYXV0bztcbn0iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0= */
+  margin: 0 auto; }
