@@ -393,7 +393,7 @@ h5 {
 h6 {
   color: #FFBA00; }
 
-.btn-default, .btn-hot, .btn-cool {
+.btn-default, .btn-hot, .btn-cool, .btn-awesome {
   display: inline-block;
   padding: 6px 12px;
   text-align: center;
@@ -414,6 +414,9 @@ h6 {
 
 .btn-cool {
   background-color: #0076A3; }
+
+.btn-awesome {
+  background-color: #6D73C2; }
 
 .grid:before, .grid:after {
   content: '';
