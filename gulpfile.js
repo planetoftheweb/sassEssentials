@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
-    sass = require('gulp-ruby-sass'),
+    sass = require("gulp-sass"),
     sourcemaps = require('gulp-sourcemaps'),
     webserver = require('gulp-webserver');
 
